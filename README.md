@@ -40,5 +40,5 @@ DoorDarshan is an access control system that allows members of the RoboTech Club
 
 ## Team Members
 
-1. [Sandipan Samanta](github.com/Sandipan04) | Development, Maintenance| 3rd Year Int. MSc. School of Mathematical Sciences
-2. [Girija Sankar Ray](github.com/Alpha3125) | Development, Maintenance | 3rd Year Int. MSc. School of Mathematical Sciences
+1. [Sandipan Samanta](https://github.com/Sandipan04) | Development, Maintenance| 3rd Year Int. MSc. School of Mathematical Sciences
+2. [Girija Sankar Ray](https://github.com/Alpha3125) | Development, Maintenance | 3rd Year Int. MSc. School of Mathematical Sciences
