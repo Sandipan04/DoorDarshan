@@ -27,3 +27,7 @@ DoorDarshan is an access control system that allows members of the RoboTech Club
   - Plywood and 3D Printed Structures: Housing and mounting for components.
   - 12V Fan: For cooling the system.
   - Dual Speaker: To provide audio feedback or announcements.
+
+- **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
+
+- **Documentation and Education:** This documentation will not only serve as a record of the project's development but also as an educational resource for club members and others interested in similar technology applications.
