@@ -14,3 +14,16 @@ DoorDarshan is an access control system that allows members of the RoboTech Club
 - **Background Research:**
   - **Discord API and Python Integration:** The first step involved researching how to integrate the Discord API with Python to control Raspberry Pi GPIO pins. This integration was facilitated using the discord.py package, a Python module designed for creating Discord bots.
   - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the MichMich Magic Mirror application, which offers the necessary customizations and multitasking capabilities.
+
+- **Materials Used:**
+  - Raspberry Pi 3B+: Central computing unit for system control.
+  - 12V Solenoid Lock: Electronic locking mechanism.
+  - 5V Relay: To interface solenoid lock with Raspberry Pi.
+  - Raspberry Pi Power Supply: To power the Raspberry Pi.
+  - 220V AC to 12V DC Adapter: Converts AC power to DC for the solenoid lock, cooling fan, speaker and display board.
+  - 13-Inch Laptop Screen: External display for information.
+  - Display Board: Interfaces the laptop screen with the Raspberry Pi.
+  - Wires and Connectors: For electrical connections.
+  - Plywood and 3D Printed Structures: Housing and mounting for components.
+  - 12V Fan: For cooling the system.
+  - Dual Speaker: To provide audio feedback or announcements.
