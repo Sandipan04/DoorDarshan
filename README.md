@@ -37,3 +37,8 @@ DoorDarshan is an access control system that allows members of the RoboTech Club
 - **Power Supply Issue with Raspberry Pi:** Initially, a 5V 2A generic adapter was used to power the Raspberry Pi. However, this led to insufficient power for the device, affecting its ability to interface effectively with the relay for the solenoid lock and the display board. To resolve this, we upgraded to the original Raspberry Pi power supply, ensuring stable performance of the Raspberry Pi and its connected components.
 
 - **Solenoid Lock Power Management:** The solenoid lock requires a 12V power supply to trigger its unlocking mechanism, but it was observed that maintaining 12V continuously, in the unlocked state, caused the lock to heat up rapidly. Further investigation revealed that while 12V is necessary for triggering the lock, only about 2-3V is needed to maintain its unlocked state. Consequently, the circuit design and Python program were modified to supply 12V to the lock only during the triggering phase and provide a lower voltage (3V) from the Raspberry Pi for the lock's maintenance phase. This adjustment significantly improved the lock's operational efficiency and safety.
+
+## Team Members
+
+1. [Sandipan Samanta](github.com/Sandipan04) | Development, Maintenance| 3rd Year Int. MSc. School of Mathematical Sciences
+2. [Girija Sankar Ray](github.com/Alpha3125) | Development, Maintenance | 3rd Year Int. MSc. School of Mathematical Sciences
