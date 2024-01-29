@@ -8,3 +8,9 @@ DoorDarshan is an access control system that allows members of the RoboTech Club
 - **Facilitate Monitoring and Transparency:** Utilize Discord commands for door access to log entry and exit, allowing clear monitoring of who accesses the club room and when.
 - **Explore and Document Key Technical Concepts:** Design, learn and record important aspects of Raspberry Pi programming, electronic lock integration, Discord API usage, and real-time data display.
 - **Educate and Engage Club Members:** This project also helps in learning and understanding how to make Discord bots using python.
+
+## Methodology
+
+- **Background Research:**
+  - **Discord API and Python Integration:** The first step involved researching how to integrate the Discord API with Python to control Raspberry Pi GPIO pins. This integration was facilitated using the discord.py package, a Python module designed for creating Discord bots.
+  - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the MichMich Magic Mirror application, which offers the necessary customizations and multitasking capabilities.
