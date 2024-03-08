@@ -27,20 +27,39 @@ There are smart door systems that automatically close and open as per requiremen
   - Dual Speaker: To provide audio feedback or announcements.
   - Switches and barrel jacks.
 
-# Methodology
+
+# Working Idea
+## Methodology
 
 - **Background Research:**
   - **Discord API and Python Integration:** The first step involved researching how to integrate the Discord API with Python to control Raspberry Pi GPIO pins. This integration was facilitated using the discord.py package, a Python module designed for creating Discord bots.
   - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the MichMich Magic Mirror application, which offers the necessary customizations and multitasking capabilities.
 - **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
 
-# Working Idea
+## Theory
 
-
+There is an requirement of internet based communication for all clients (*lab members*) with the common server at the door (*Door-Darshan*). Due to availability of 24x7 Wifi accessibility in the lab (*through NISER's Intranet*) , the RPi 3B with its Wifi capabilities can always be set connected with it.
+A 12V solenoid lock is used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
+A python file which always runs on startup acts as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, Speakers and MagicMirror display.
 
 # Circuit Diagram
 
-
+# Chassis / Body Design
+Small description
+- Note down in
+- bullet points
+- about the
+- dimesions, weight
+- etc
+# _Any relevant section (optional)_
+Relevant Text
+# Guide to how the prepared product be used.
+- Try to use
+- bullet points
+# Scope of Improvement
+- This template can be made more detailed
+# Notes
+Relevant Notes
 
 # Observations
 
@@ -50,5 +69,7 @@ There are smart door systems that automatically close and open as per requiremen
 
 # Team Members
 
-1. [Sandipan Samanta](https://github.com/Sandipan04) | Development, Maintenance| 3rd Year Int. MSc. School of Mathematical Sciences
-2. [Girija Sankar Ray](https://github.com/Alpha3125) | Development, Maintenance | 3rd Year Int. MSc. School of Mathematical Sciences
+1. [Sandipan Samanta](https://github.com/Sandipan04) | Development, Maintenance | Int. Msc. Batch 21
+2. [Girija Sankar Ray](https://github.com/Alpha3125) | Development, Maintenance | Int. Msc. Batch 21
+   
+*DoorDarshan is the improvement to MagicMirror which was initially developed by Jyothis KJ, student of Int. Msc. Batch 18.*
