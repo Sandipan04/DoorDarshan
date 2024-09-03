@@ -16,7 +16,7 @@ There are smart door systems that automatically close and open as per requiremen
 # Components and Materials
   - Raspberry Pi 3B+: Central computing unit for system control.
   - 12V Solenoid Lock: Electronic locking mechanism.
-  - 5V Relay: To interface solenoid lock with Raspberry Pi.
+  - 5V Relay: To interface solenoid lock with Raspberry Pi and acts as voltage switching unit.
   - Raspberry Pi Power Supply: To power the Raspberry Pi.
   - 220V AC to 12V DC Adapter: Converts AC power to DC for the solenoid lock, cooling fan, speaker and display board.
   - 13-Inch Laptop Screen: External display for information.
@@ -33,7 +33,7 @@ There are smart door systems that automatically close and open as per requiremen
 
 - **Background Research:**
   - **Discord API and Python Integration:** The first step involved researching how to integrate the Discord API with Python to control Raspberry Pi GPIO pins. This integration was facilitated using the discord.py package, a Python module designed for creating Discord bots.
-  - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the MichMich Magic Mirror application, which offers the necessary customizations and multitasking capabilities.
+  - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the [MichMich Magic Mirror](https://github.com/MagicMirrorOrg/MagicMirror) application ([_website_](https://magicmirror.builders/)), which offers the necessary customizations and multitasking capabilities.
 - **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
 
 ## Theory
