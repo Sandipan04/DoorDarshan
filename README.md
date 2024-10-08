@@ -13,7 +13,7 @@ Authorized club members who have access to the DoorDarshan Discord channel can i
 ## Literature Review
 There are smart door systems that automatically close and open as per requirement. But applications at remote control of door *opening/closing* is limited and and overtly complicated.
 
-# Components and Materials
+## Physical Components and Materials
   - Raspberry Pi 3B+: Central computing unit for system control.
   - 12V Solenoid Lock: Electronic locking mechanism.
   - 5V Relay: To interface solenoid lock with Raspberry Pi and acts as voltage switching unit.
@@ -27,8 +27,16 @@ There are smart door systems that automatically close and open as per requiremen
   - Dual Speaker: To provide audio feedback or announcements.
   - Switches and barrel jacks.
 
+## Software Requirements
+  - [Shell Script](https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/): To run a sequence of commands in an Operating System. (Here it is to execute the pm2 command)
+  - [pm2](https://en.wikipedia.org/wiki/PM2_(software)#:~:text=PM2%20or%20Process%20Manager%202,in%202013%20by%20Alexandre%20Strzelewicz.): Process Manager for node.js applications (Here it is MagicMirror)
+  - nodejs
+  - [MagicMirror](https://magicmirror.builders/)
+  - python 3
+  - discord.py library (python)
+  - Discord server / channel with bot integration
 
-# Working Idea
+
 ## Methodology
 
 - **Background Research:**
@@ -42,26 +50,59 @@ There is an requirement of internet based communication for all clients (*lab me
 A 12V solenoid lock is used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
 A python file which always runs on startup acts as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, Speakers and MagicMirror display.
 
-# Circuit Diagram
+## Circuit Diagram
 
-# Chassis / Body Design
+## Chassis / Body Design
 Small description
 - Note down in
 - bullet points
 - about the
 - dimesions, weight
 - etc
-# _Any relevant section (optional)_
-Relevant Text
-# Guide to how the prepared product be used.
-- Try to use
-- bullet points
-# Scope of Improvement
-- This template can be made more detailed
-# Notes
-Relevant Notes
 
-# Observations
+## Execution Flow
+
+## Directory Tree
+Magic Mirror <br />
+&emsp;&emsp;|--config <br />
+&emsp;&emsp;|&emsp;&emsp;|--config.js &emsp;&emsp;_#Change this file for importing modules in MM and changing settings of MM and its modules._ <br />
+&emsp;&emsp;|&emsp;&emsp;: <br />
+&emsp;&emsp;|--modules <br />
+&emsp;&emsp;|&emsp;&emsp;|--MMM-PythonPrint &emsp;&emsp;_#Module for running a python file and display output on the screen._ <br />
+&emsp;&emsp;:&emsp;&emsp;|&emsp;&emsp;|--doordarshan.py &emsp;&emsp;_#Python file for discord bot and controlling the lock._ <br />
+&emsp;&emsp; &emsp;&emsp;|&emsp;&emsp;: <br />
+&emsp;&emsp; &emsp;&emsp;|--MMM-HTMLBox &emsp;&emsp;_#Modules for displaying a html file on the screen._ <br />
+&emsp;&emsp; &emsp;&emsp;|&emsp;&emsp;|--lab_access.html &emsp;&emsp;_#HTML file containing list of people having access to the lab._ <br />
+&emsp;&emsp; &emsp;&emsp;|&emsp;&emsp;: <br />
+&emsp;&emsp; &emsp;&emsp;|--MMM-Wallpaper &emsp;&emsp;_#Module for keeping/changing wallpaper of the MM Screen._ <br />
+&emsp;&emsp; &emsp;&emsp;|&emsp;&emsp;: <br />
+
+
+## Troubleshooting / Known Problems
+- Solenoid lock heating issue
+  - This means it is getting constant 12V power supply.
+  - Case 1 : Mechanical failure of the relay or the wires connected to the relay.
+  - Case 2 : Software failure, i.e., doordarshan.py is not running or stuck. In this case, type `pm2 log mm` in the terminal to get the actual issue.
+- Raspberry Pi heating issue
+  - Check if the 12V fan is working properly
+  - Check if there's too much CPU load on RPi by using the command `htop`. The reasons for CPU overload can be ambiguous.
+  - Try rebooting and check if the problem still persists.
+- RPi 3B+ has low RAM (1GB), so it connot perform multiple tasks simultaneously. Also, it is better to increase the swap memory to 512 - 1024 MB. Check out this [guide](https://pimylifeup.com/raspberry-pi-swap-file/).
+- RPi low voltage warning
+  - This means RPi is not getting the rated voltage / current.
+  - Check if RPi original adapter is used.
+- For any other issues
+  - First check if doordarshan.py is running or not by sending `.hello` in discord.
+  - If python file (discord bot) is working properly, check all the wires, connections and hardware components.
+  - If python file is not working then check the output of `pm2 log mm` in terminal.
+  - If python file is running but not getting connected to discord server, check network settings and the discord bot token and its persmissions. There might be changes by Discord itself.
+  - If MM is not working, again check the output of `pm2 log mm` in terminal.
+- Note
+  - If the config file is changed in MM, first run `npm run config:check` in terminal inside the MagicMirror directory to check for issues before starting MagicMirror.
+## Scope of Improvement
+- This template can be made more detailed
+
+## Some observations during our initial developement!
 
 - **Power Supply Issue with Raspberry Pi:** Initially, a 5V 2A generic adapter was used to power the Raspberry Pi. However, this led to insufficient power for the device, affecting its ability to interface effectively with the relay for the solenoid lock and the display board. To resolve this, we upgraded to the original Raspberry Pi power supply, ensuring stable performance of the Raspberry Pi and its connected components.
 
@@ -69,7 +110,7 @@ Relevant Notes
 
 # Team Members
 
-1. [Sandipan Samanta](https://github.com/Sandipan04) | Development, Maintenance | Int. Msc. Batch 21
-2. [Girija Sankar Ray](https://github.com/Alpha3125) | Development, Maintenance | Int. Msc. Batch 21
+1. [Sandipan Samanta](https://github.com/Sandipan04) | Developer, Hardware/Software Integration | Int. Msc. Batch 21
+2. [Girija Sankar Ray](https://github.com/Alpha3125) | Original Concept Idea, Developer | Int. Msc. Batch 21
    
 *DoorDarshan is the improvement to MagicMirror which was initially developed by Jyothis KJ, student of Int. Msc. Batch 18.*
