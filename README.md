@@ -37,18 +37,23 @@ There are smart door systems that automatically close and open as per requiremen
   - Discord server / channel with bot integration
 
 
-## Methodology
-
+## Theory and Methodology
+- **Motivational idea:** There is an requirement of internet based communication for all clients (*lab members*) with the common server at the door (*Door-Darshan*). Due to availability of 24x7 Wifi accessibility in the lab (*through NISER's Intranet*) , the RPi 3B with its Wifi capabilities can always be set connected with it.
+A 12V solenoid lock can be used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
+A python file which always runs on startup can act as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, speakers and MagicMirror display.
+ 
 - **Background Research:**
   - **Discord API and Python Integration:** The first step involved researching how to integrate the Discord API with Python to control Raspberry Pi GPIO pins. This integration was facilitated using the discord.py package, a Python module designed for creating Discord bots.
-  - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the [MichMich Magic Mirror](https://github.com/MagicMirrorOrg/MagicMirror) application ([_website_](https://magicmirror.builders/)), which offers the necessary customizations and multitasking capabilities.
+
+  - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the [MichMich Magic Mirror](https://github.com/MagicMirrorOrg/MagicMirror) application (visit their [_website_](https://magicmirror.builders/)), which offers the necessary customizations and multitasking capabilities.
+
 - **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
 
 ## Theory
 
 There is an requirement of internet based communication for all clients (*lab members*) with the common server at the door (*Door-Darshan*). Due to availability of 24x7 Wifi accessibility in the lab (*through NISER's Intranet*) , the RPi 3B with its Wifi capabilities can always be set connected with it.
-A 12V solenoid lock is used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
-A python file which always runs on startup acts as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, Speakers and MagicMirror display.
+A 12V solenoid lock can be used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
+A python file which always runs on startup can act as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, speakers and MagicMirror display.
 
 ## Circuit Diagram
 
