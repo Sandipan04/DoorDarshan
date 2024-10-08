@@ -13,7 +13,7 @@ Authorized club members who have access to the DoorDarshan Discord channel can i
 ## Literature Review
 There are smart door systems that automatically close and open as per requirement. But applications at remote control of door *opening/closing* is limited and and overtly complicated.
 
-## Physical Components and Materials
+## Physical Components/Materials Requirements
   - Raspberry Pi 3B+: Central computing unit for system control.
   - 12V Solenoid Lock: Electronic locking mechanism.
   - 5V Relay: To interface solenoid lock with Raspberry Pi and acts as voltage switching unit.
