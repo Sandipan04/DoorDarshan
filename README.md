@@ -33,7 +33,7 @@ There are smart door systems that automatically close and open as per requiremen
   - nodejs
   - [MagicMirror](https://magicmirror.builders/)
   - python 3
-  - discord.py library (python)
+  - [discord.py](https://discordpy.readthedocs.io/en/stable/) python library
   - Discord server / channel with bot integration
 
 
@@ -48,12 +48,6 @@ A python file which always runs on startup can act as the central unit which int
   - **Displaying Information and Running Simultaneous Processes:** Further research focused on how to display important information such as the list of authorized members, club events, and real-time data like weather and time, while ensuring the Python file containing the Discord bot runs simultaneously. The solution was found in the [MichMich Magic Mirror](https://github.com/MagicMirrorOrg/MagicMirror) application (visit their [_website_](https://magicmirror.builders/)), which offers the necessary customizations and multitasking capabilities.
 
 - **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
-
-## Theory
-
-There is an requirement of internet based communication for all clients (*lab members*) with the common server at the door (*Door-Darshan*). Due to availability of 24x7 Wifi accessibility in the lab (*through NISER's Intranet*) , the RPi 3B with its Wifi capabilities can always be set connected with it.
-A 12V solenoid lock can be used to lock the door after the door closer arm engages. It normally stays closed without any provided voltage. To open the lock, an initial supply of 9 ~ 12 V is required. After opening, a minor supply of voltage ~ 3V is required to keep it engaged.
-A python file which always runs on startup can act as the central unit which intakes command comming through Discord's server and process accordingly to control the Relay module, speakers and MagicMirror display.
 
 ## Circuit Diagram
 
