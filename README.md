@@ -51,14 +51,7 @@ A python file which always runs on startup can act as the central unit which int
 
 ## Circuit Diagram
 
-## Chassis / Body Design
-Small description
-- Note down in
-- bullet points
-- about the
-- dimesions, weight
-- etc
-
+![alt text]([https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/Circuitry.jpg](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/DD_labelled.jpg))
 ## Execution Flow
 
 ## Directory Tree
@@ -99,7 +92,11 @@ Magic Mirror <br />
 - Note
   - If the config file is changed in MM, first run `npm run config:check` in terminal inside the MagicMirror directory to check for issues before starting MagicMirror.
 ## Scope of Improvement
-- This template can be made more detailed
+- This README (documentation) can be improved.
+- The casing of the whole system can be accurately designed and improved.
+- Safety standards of the system can be improved such that even forceful tampering doesnot cause electrical shocks.
+- More beneficial features like face recognition, fingerprint scanning, and integration with other IoT based systems in the lab can be done.
+- Already present features can be simplified.
 
 ## Some observations during our initial developement!
 
