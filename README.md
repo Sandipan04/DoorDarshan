@@ -83,6 +83,10 @@ Magic Mirror <br />
 - RPi low voltage warning
   - This means RPi is not getting the rated voltage / current.
   - Check if RPi original adapter is used.
+- Module not working
+  - Check by manually running a code to test the module. The module can be removed (_might be tedious to put back, also do note the connections_) to manually check in another setup.
+  - Check if there is no [common ground]([url](https://www.sentera.eu/en/faq/g/what-is-a-common-ground/993)) error.
+  - Try replacing the module in case it is not working.
 - For any other issues
   - First check if doordarshan.py is running or not by sending `.hello` in discord.
   - If python file (discord bot) is working properly, check all the wires, connections and hardware components.
