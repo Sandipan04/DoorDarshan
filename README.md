@@ -49,7 +49,7 @@ A python file which always runs on startup can act as the central unit which int
 
 - **Design Iteration and Optimization:** Continuously iterate and update circuit design and software for optimizing power eficiency, safety and security.
 
-## Diagrams
+## Circuit Diagrams
 ![Circuitry](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/DD_labelled.jpg)
 Some modules are not rigorously labelled since they are subject to replacement. It's highly important that the person maintaining the system takes upon initiative to conceptually understand its working.
 ![Labelled Circuitry](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/circuit_diagram.jpg)
