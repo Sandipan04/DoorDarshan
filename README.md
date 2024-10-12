@@ -30,7 +30,7 @@ There are smart door systems that automatically close and open as per requiremen
 ## Software Requirements
   - [Shell Script](https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/): To run a sequence of commands in an Operating System. (Here it is to execute the pm2 command)
   - [pm2](https://en.wikipedia.org/wiki/PM2_(software)#:~:text=PM2%20or%20Process%20Manager%202,in%202013%20by%20Alexandre%20Strzelewicz.): Process Manager for node.js applications (Here it is MagicMirror)
-  - nodejs
+  - node.js
   - [MagicMirror](https://magicmirror.builders/)
   - python 3
   - [discord.py](https://discordpy.readthedocs.io/en/stable/) python library
@@ -55,7 +55,7 @@ Some modules are not rigorously labelled since they are subject to replacement. 
 ![Labelled Circuitry](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/circuit_diagram.jpg)
 _There is also chances for minor mistakes!_
 ## Execution Flow
-
+![Execution Flow](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/execution_flow.jpg)
 ## Directory Tree
 Magic Mirror <br />
 &emsp;&emsp;|--config <br />
@@ -105,7 +105,7 @@ Magic Mirror <br />
 - More beneficial features like face recognition, fingerprint scanning, and integration with other IoT based systems in the lab can be done.
 - Already present features can be simplified.
 
-## Some observations during our initial developement!
+## Some Observations During Developement!
 
 - **Power Supply Issue with Raspberry Pi:** Initially, a 5V 2A generic adapter was used to power the Raspberry Pi. However, this led to insufficient power for the device, affecting its ability to interface effectively with the relay for the solenoid lock and the display board. To resolve this, we upgraded to the original Raspberry Pi power supply, ensuring stable performance of the Raspberry Pi and its connected components.
 
@@ -114,6 +114,7 @@ Magic Mirror <br />
 # Team Members
 
 1. [Sandipan Samanta](https://github.com/Sandipan04) | Developer, Hardware/Software Integration | Int. Msc. Batch 21
-2. [Girija Sankar Ray](https://github.com/Alpha3125) | Original Concept Idea, Developer | Int. Msc. Batch 21
+2. [Girija Sankar Ray](https://github.com/Alpha3125) | oncept Idea, Developer | Int. Msc. Batch 21
+   _Contact us for any help required_
    
 *DoorDarshan is the improvement to MagicMirror which was initially developed by Jyothis KJ, student of Int. Msc. Batch 18.*
