@@ -51,7 +51,7 @@ A python file which always runs on startup can act as the central unit which int
 
 ## Circuit Diagram
 
-![alt text]([https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/Circuitry.jpg](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/DD_labelled.jpg))
+![alt text](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/DD_labelled.jpg)
 ## Execution Flow
 
 ## Directory Tree
