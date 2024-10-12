@@ -115,6 +115,7 @@ Magic Mirror <br />
 
 1. [Sandipan Samanta](https://github.com/Sandipan04) | Developer, Hardware/Software Integration | Int. Msc. Batch 21
 2. [Girija Sankar Ray](https://github.com/Alpha3125) | oncept Idea, Developer | Int. Msc. Batch 21
-   _Contact us for any help required_
+
+_Contact us for any help required!_
    
 *DoorDarshan is the improvement to MagicMirror which was initially developed by Jyothis KJ, student of Int. Msc. Batch 18.*
