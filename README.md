@@ -55,7 +55,7 @@ Some modules are not rigorously labelled since they are subject to replacement. 
 ![Labelled Circuitry](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/circuit_diagram.jpg)
 _There is also chances for minor mistakes!_
 ## Execution Flow
-![Execution Flow]()
+![Execution Flow](https://github.com/rtcniser/2023-YY_DoorDarshan_ACTIVE/blob/main/Photos/execution_flow_DD.drawio.svg)
 ## Directory Tree
 Magic Mirror <br />
 &emsp;&emsp;|--config <br />
