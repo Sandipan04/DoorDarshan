@@ -29,10 +29,10 @@ There are smart door systems that automatically close and open as per requiremen
 
 ## Software Requirements
   - [Shell Script](https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/): To run a sequence of commands in an Operating System. (Here it is to execute the pm2 command)
-  - [pm2](https://en.wikipedia.org/wiki/PM2_(software)#:~:text=PM2%20or%20Process%20Manager%202,in%202013%20by%20Alexandre%20Strzelewicz.): Process Manager for node.js applications (Here it is MagicMirror)
-  - node.js
+  - [npm](https://www.w3schools.com/whatis/whatis_npm.asp) and node.js to be installed.
+  - python 3 to be installed.
+  - [pm2](https://en.wikipedia.org/wiki/PM2_(software)#:~:text=PM2%20or%20Process%20Manager%202,in%202013%20by%20Alexandre%20Strzelewicz.): Process Manager for node.js applications (and also any scripts). Check [this](https://pm2.keymetrics.io/docs/usage/quick-start/).
   - [MagicMirror](https://magicmirror.builders/)
-  - python 3
   - [discord.py](https://discordpy.readthedocs.io/en/stable/) python library
   - Discord server / channel with bot integration
 
@@ -114,7 +114,7 @@ Magic Mirror <br />
 # Team Members
 
 1. [Sandipan Samanta](https://github.com/Sandipan04) | Developer, Hardware/Software Integration | Int. Msc. Batch 21
-2. [Girija Sankar Ray](https://github.com/Alpha3125) | oncept Idea, Developer | Int. Msc. Batch 21
+2. [Girija Sankar Ray](https://github.com/Alpha3125) | Concept Idea, Developer | Int. Msc. Batch 21
 
 _Contact us for any help required!_
    
